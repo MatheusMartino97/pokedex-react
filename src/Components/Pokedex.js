@@ -7,7 +7,8 @@ class Pokedex extends Component {
   constructor(props) {
     super(props)
 
-    this.nextPokemon = this.nextPokemon.bind(this)
+    // Arrow functions do not require to bind this
+    // this.nextPokemon = this.nextPokemon.bind(this)
     // this.previousPokemon = this.previousPokemon.bind(this)
     this.state = {
       pokemonIndex: 0
@@ -22,7 +23,7 @@ class Pokedex extends Component {
         }
       })
     } else {
-      this.setState((previousState, _props) => {
+      this.setState((_previousState, _props) => {
         return {
           pokemonIndex: 0
         }
