@@ -1,8 +1,9 @@
 #root {
   background-image: url('https://i.gifer.com/FRhq.gif');
   background-image: url('https://i.gifer.com/FRhq.gif');
-  background-image: url('https://media3.giphy.com/media/W04QVzelTHsNW/giphy.gif');
+  /* background-image: url('https://media3.giphy.com/media/W04QVzelTHsNW/giphy.gif'); */
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -14,7 +15,7 @@
 .pokemon-card {
   display: flex;
   justify-content: center;
-  margin: 5px;
+  margin: 10px;
   border-radius: 5px;
   width: 25vw;
   min-width: 300px;
@@ -22,12 +23,30 @@
   background-color: rgb(201, 201, 201);
 }
 
+button {
+  cursor: pointer;
+}
+
+.buttons {
+  text-align: center;
+}
+
 h1 {
   display: inline-block;
   background: -webkit-linear-gradient(red, red, red, red, black, white, white, white);
-  text-decoration: line-through;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.title {
+  border-radius: 50%;
+}
+
+.title, .pokedex {
+  border: 5px ridge gray;
+  padding: 10px;
+  margin: 25px;
+  background-color: rgba(128, 128, 128, 0.479);
 }
 
 ul {
