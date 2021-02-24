@@ -55,3 +55,9 @@ h1 {
 ul {
   list-style: outside;
 }
+
+img {
+  border: 1px solid black;
+  border-radius: 50%;
+  background: linear-gradient(red, red, red, red, red, black, white, white, white, white);
+}
